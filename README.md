@@ -1,2 +1,2 @@
 # ivan.polovyi.public
-My code for public
+My codes for public
