@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane fx:id="aPRScanScene" prefHeight="873.0" prefWidth="1250.0" stylesheets="@../css/ScanSceneCSS.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ivan.polovyi.PriceCheckerScreen.controllers.ScanSceneController">
+   <children>
+      <BorderPane prefHeight="873.0" prefWidth="1250.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane fx:id="aPTop" prefHeight="257.0" prefWidth="1250.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="lblWarning" layoutX="-139.0" layoutY="177.0" prefHeight="80.0" prefWidth="1250.0" visible="false" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="177.0" />
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane fx:id="apBottom" prefHeight="114.0" prefWidth="1250.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <center>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <center>
+                  <GridPane prefHeight="386.0" prefWidth="1250.0" BorderPane.alignment="CENTER">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="208.0" minHeight="10.0" prefHeight="126.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="413.0" minHeight="10.0" prefHeight="376.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <TextField fx:id="txtFieldScanInput" onAction="#getInput" prefHeight="88.0" prefWidth="1250.0" />
+                        <AnchorPane fx:id="aPImage" prefHeight="355.0" prefWidth="1150.0" GridPane.rowIndex="1">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </AnchorPane>
+                     </children>
+                     <BorderPane.margin>
+                        <Insets />
+                     </BorderPane.margin>
+                  </GridPane>
+               </center>
+            </BorderPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

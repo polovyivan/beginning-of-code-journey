@@ -1,0 +1,50 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+#aPRScanScene{
+	-fx-background-color:#f0f0f0;
+	
+}
+
+    #aPTop{
+   -fx-background-color:blue;
+    -fx-background-image:url("/ivan/polovyi/PriceCheckerScreen/view/pictures/ScanTop.jpg");
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	    }
+
+   #apBottom{
+   	-fx-background-color:blue;
+   	-fx-background-image:url("/ivan/polovyi/PriceCheckerScreen/view/pictures/ScanBottom.jpg");
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: cover, auto;	
+   }
+
+   #txtFieldScanInput{
+   	-fx-background-color: #f0f0f0 ;
+    -fx-background-insets: 0.0px ;
+    -fx-font: 30.0px Tahoma;
+    -fx-opacity:0.85;
+    -fx-stroke: black;
+    -fx-stroke-width: 1.0;
+    -fx-alignment:center;
+    -fx-display-caret: false;
+   }
+ #aPImage{ 	 	
+   	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size:320.0 320.0, 320.0 320.0, 320.0 320.0, 320.0 320.0, auto;
+		
+	}
+	 #lblWarning{
+	-fx-background-color: #F08080;
+    -fx-font: 30.0px Tahoma;
+    -fx-opacity:0.75;
+    -fx-stroke: black;
+    -fx-stroke-width: 1.0;
+    -fx-alignment:center;
+	 	
+	 }
+	
+
+   
