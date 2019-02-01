@@ -1,0 +1,114 @@
+<html>
+<head></head>
+<body>
+	<script>
+		function startTime() {
+			var today = new Date();
+			var h = today.getHours();
+			var m = today.getMinutes();
+			var s = today.getSeconds();
+			m = checkTime(m);
+			s = checkTime(s);
+			document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+			var t = setTimeout(startTime, 500);
+		}
+		function checkTime(i) {
+			if (i < 10) {
+				i = "0" + i
+			}
+			; // add zero in front of numbers < 10
+			return i;
+		}
+	</script>
+	<style>
+body, html {
+	background-color: white;
+}
+#txt {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-style: italic, oblique;
+	font-size: 10000%;
+	color: #00000;
+	position: relative;
+	text-align: center;
+	letter-spacing: 5px;
+	bottom: 250;
+	color: black;
+	font: bold 290px Helvetica, Arial, Sans-Serif;
+	text-shadow: 0 1px 0 #ccc, 0 2px 0 #000000, 0 3px 0 #000000, 0 4px 0
+		#000000, 0 5px 0 #000000, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px
+		rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px
+		rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px
+		rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+}
+h1 {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-style: italic, oblique;
+	font-size: 300%;
+	color: #00000;
+	position: relative;
+	text-align: center;
+	letter-spacing: -2px;
+	margin: -5
+}
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	bottom: -300;
+	vertical-align: middle;
+}
+.toPrint{
+	text-align: center;
+	background-image: .bg;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;;
+	font-style: oblique;
+	font-size: 460%;
+	color: #00000;
+	letter-spacing: 5px;
+	margin: 50;
+}
+/* DEMO-SPECIFIC STYLES */
+.toPrint h2 {
+   font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+</style>
+<body>
+
+</body>
+<div class="bg"></div>
+<div class="total">
+	<h1>Total de Pedidos: 44</h1>
+</div>
+<div class="toPrint">
+	<h2>www.webshop.com</h2>
+</div>
+
+<div class="table"></div>
+<img SRC="file:\\WebShopNewOrderMes\src\br\com\holambelo\ivan\webshop\url\logo.jpg"
+	WIDTH=300 HEIGHT=150 class="center">
+<body onload="startTime()">
+
+	<div id="txt"></div>
+</html>
+
+
