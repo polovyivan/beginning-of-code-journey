@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane fx:id="loginAP" prefHeight="803.0" prefWidth="1469.0" stylesheets="@LoginWindowCSS2.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ivan.polovyi.SelfCheckoutMaven.controllers.LoginController">
+   <children>
+      <WebView fx:id="loginWW" layoutX="12.0" layoutY="13.0" prefHeight="3.0" prefWidth="4.0" />
+      <Label fx:id="lblHowItWorks" layoutX="1249.0" layoutY="14.0" onMouseEntered="#lblHowItWorksEntered" onMouseExited="#lblHowItWorksExited" prefHeight="45.0" prefWidth="97.0" text="AJUDA" textAlignment="CENTER" AnchorPane.leftAnchor="1249.0" AnchorPane.topAnchor="14.0" />
+      <AnchorPane fx:id="apHowItWorks" layoutX="942.0" layoutY="62.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="218.0" prefWidth="423.0" visible="false" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="62.0">
+         <children>
+            <Rectangle fx:id="rctHowItWorks" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="210.0" layoutX="7.0" layoutY="4.0" stroke="BLACK" strokeType="INSIDE" width="410.0" AnchorPane.bottomAnchor="34.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="4.0" />
+            <VBox fx:id="vBoxHelp" layoutX="6.0" layoutY="3.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="210.0" prefWidth="410.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+               <children>
+                  <Label fx:id="lblHowItWorks1" prefHeight="30.0" prefWidth="410.0" text="1. Faça login no sistema " />
+                  <Label fx:id="lblHowItWorks11" prefHeight="30.0" prefWidth="411.0" text="usando suas credenciais do WebShop ">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="lblHowItWorks2" prefHeight="37.0" prefWidth="410.0" text="2. Faça coleta dos produtos usando" />
+                  <Label fx:id="lblHowItWorks22" prefHeight="30.0" prefWidth="409.0" text="o código  presente na etiqueta ">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="lblHowItWorks3" prefHeight="33.0" prefWidth="423.0" text="3. Finalize a coleta">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="lblHowItWorks4" prefHeight="30.0" prefWidth="411.0" text="4. Leve os produtos e o cupom até o conferente" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <VBox fx:id="vBoxLoginPanel" alignment="CENTER" disable="true" layoutX="400.0" layoutY="528.0" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="400.0">
+         <children>
+            <TextField fx:id="txtFieldUserName" prefHeight="35.0" prefWidth="410.0" promptText="Usuário">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </TextField>
+            <PasswordField fx:id="passField" prefHeight="35.0" prefWidth="299.0" promptText="Senha">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </PasswordField>
+            <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#loginAction" prefHeight="35.0" prefWidth="299.0" text="Login">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Button>
+            <PasswordField fx:id="passFieldAcKey" onAction="#getACKey" promptText="ou leia chave de acesso" />
+            <Label fx:id="lblWarning" prefHeight="17.0" prefWidth="416.0" text="Carregando..." />
+         </children>
+      </VBox>
+      <Label fx:id="lblSelfCheckOut" layoutX="400.0" layoutY="240.0" prefHeight="80.0" prefWidth="668.0" text="SELF-SERVICE" AnchorPane.leftAnchor="349.0" AnchorPane.rightAnchor="349.0" AnchorPane.topAnchor="240.0" />
+      <AnchorPane fx:id="aPprocesPicture" layoutX="313.0" layoutY="311.0" prefHeight="200.0" prefWidth="771.0" AnchorPane.leftAnchor="313.0" AnchorPane.rightAnchor="385.0" />
+      <AnchorPane fx:id="aLogoPicture" layoutX="495.0" layoutY="13.0" prefHeight="228.0" prefWidth="479.0" AnchorPane.leftAnchor="495.0" AnchorPane.rightAnchor="495.0" AnchorPane.topAnchor="13.0" />
+   </children>
+</AnchorPane>

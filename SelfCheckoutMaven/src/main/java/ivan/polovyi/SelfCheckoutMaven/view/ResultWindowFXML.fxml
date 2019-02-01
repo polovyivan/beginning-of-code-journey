@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane fx:id="ApResult" prefHeight="699.0" prefWidth="1421.0" stylesheets="@ResultWindowCSS.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ivan.polovyi.SelfCheckoutMaven.controllers.ResultController">
+   <children>
+      <WebView fx:id="WwResult" layoutX="-209.0" layoutY="-222.0" prefHeight="914.0" prefWidth="1843.0" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="-209.0" AnchorPane.rightAnchor="-213.0" AnchorPane.topAnchor="-222.0" />
+      <VBox fx:id="vBoxResult" prefHeight="284.0" prefWidth="1421.0">
+         <children>
+            <Label fx:id="lblResult" alignment="CENTER" contentDisplay="TOP" prefHeight="38.0" prefWidth="1427.0" text="Coleta realizada com sucesso!!!">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="lblResult2" prefHeight="17.0" prefWidth="1421.0" text="Leve os produtos e o cupom até o conferente.">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="lblResult3" prefHeight="38.0" prefWidth="1421.0" text="Obrigado!">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="lblResult4" prefHeight="38.0" prefWidth="1428.0" text="Imprimindo cupom... Aguarde um momento.">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="lblResult5" prefHeight="17.0" prefWidth="1421.0" text=" ">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="lblResult6" prefHeight="17.0" prefWidth="1438.0" text="segundos" visible="false" />
+         </children>
+      </VBox>
+      <Button fx:id="btnLogOut" mnemonicParsing="false" onAction="#logOut" prefHeight="44.0" prefWidth="84.0" text="Sair" visible="false" />
+      <Label fx:id="lblError" layoutY="431.0" prefHeight="85.0" prefWidth="1421.0" visible="false" />
+      <ProgressIndicator fx:id="progInd" layoutX="527.0" layoutY="340.0" prefHeight="279.0" prefWidth="371.0" progress="0.0" visible="false" />
+   </children>
+</AnchorPane>
