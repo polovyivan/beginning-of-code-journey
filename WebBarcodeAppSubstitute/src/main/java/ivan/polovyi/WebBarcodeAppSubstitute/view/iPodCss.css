@@ -1,0 +1,84 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+#aPane {
+	
+}
+
+#apPrint{
+	-fx-background-color: transparent;
+	
+}
+
+
+#ipodTextField{
+	-fx-alignment: center;
+	-fx-font-family:'Open Sans','Trebuchet MS','Arial','sans-serif';
+    -fx-font-size:20.0px;
+    -fx-font-weight:normal;
+    -fx-font-style:italic;
+	
+}
+
+#btnLogout, #btnScanTab {
+	 -fx-background-color: 
+        linear-gradient(#f2f2f2, #d6d6d6),
+        linear-gradient(#fcfcfc 0.0%, #d9d9d9 20.0%, #d6d6d6 100.0%),
+        linear-gradient(#dddddd 0.0%, #f6f6f6 50.0%);
+    -fx-background-radius: 8.0,7.0,6.0;
+    -fx-background-insets: 0.0,1.0,2.0;
+    -fx-text-fill: black;
+      
+    -fx-effect: dropshadow( three-pass-box , rgba(0.0,0.0,0.0,0.6) , 5.0, 0.0 , 0.0 , 1.0 );
+	-fx-font-size:15.0px;
+	-fx-background-color: #DCDCDC;
+}
+
+ #btnScanTab:pressed{
+	-fx-font-size: 10.0px;
+	-fx-background-radius: 0.0,0.0,0.0,0.0;
+	-fx-background-color: #3CB371;
+}
+
+
+
+#btnLogout:pressed{
+	-fx-font-size: 10.0px;
+	-fx-background-radius: 0.0,0.0,0.0,0.0;
+	-fx-background-color: red;
+}
+
+#btnPrintOrder{
+	 -fx-effect: dropshadow( three-pass-box , rgba(0.0,0.0,0.0,0.6) , 5.0, 0.0 , 0.0 , 1.0 );
+	-fx-border-color: #cecece;
+	-fx-background-color: transparent;
+	-fx-alignment: center;
+	-fx-font-family:'Open Sans','Trebuchet MS','Arial','sans-serif';
+    -fx-font-size:30.0px;
+    -fx-font-weight:normal;
+    -fx-font-style:italic;
+}
+
+#btnPrintOrder:pressed{
+	  -fx-font-size:33.0px;
+	 -fx-border-color: white;
+	 -fx-background-color: #859100;
+	  
+}
+
+#lblPrintOrder{
+	-fx-background-color: white;
+	-fx-alignment: center;
+	-fx-font-family:'Open Sans','Trebuchet MS','Arial','sans-serif';
+    -fx-font-size:70.0px;
+    -fx-font-weight:normal;
+    -fx-font-style:italic;
+	
+}
+#lblOrderNumber{
+	-fx-background-color: white;
+	-fx-alignment: center;
+	-fx-font-family:'Open Sans','Trebuchet MS','Arial','sans-serif';
+    -fx-font-size:70.0px;
+    -fx-font-weight:normal;
+    -fx-font-style:italic;
+}
