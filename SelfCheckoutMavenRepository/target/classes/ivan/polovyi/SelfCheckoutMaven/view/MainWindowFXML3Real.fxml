@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane fx:id="mainWindowAP" prefHeight="714.0" prefWidth="1373.0" stylesheets="@MainWindowCSS2.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ivan.polovyi.SelfCheckoutMaven.controllers.MainWindowController">
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <children>
+      <WebView fx:id="weShopingCart" layoutX="669.0" layoutY="-143.0" maxWidth="1373.0" prefHeight="1013.0" prefWidth="733.0" AnchorPane.bottomAnchor="-19.0" AnchorPane.leftAnchor="669.0" AnchorPane.topAnchor="-143.0" />
+      <Rectangle fx:id="rctlMainTop" arcHeight="5.0" arcWidth="5.0" fill="#a6ee76" height="92.0" layoutX="3.0" layoutY="8.0" stroke="BLACK" strokeType="INSIDE" width="1371.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="0.0" />
+      <HBox layoutX="676.0" layoutY="15.0">
+         <children>
+            <Button fx:id="btnCompleteOrder" mnemonicParsing="false" onAction="#completOrder" prefHeight="60.0" prefWidth="122.0" text="FINALIZAR" visible="false">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+               <tooltip>
+                  <Tooltip fx:id="ttpBtnSubmit" text="Para finalizar sua compra" />
+               </tooltip>
+            </Button>
+            <Button fx:id="btnDeletAll" mnemonicParsing="false" onAction="#deleteAll" prefHeight="60.0" prefWidth="122.0" text="EXCLUIR TUDO" visible="false">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+               <tooltip>
+                  <Tooltip fx:id="ttpBtnDelletAll" text="Para apagar toda sua compra" />
+               </tooltip>
+            </Button>
+            <Button fx:id="btnLogOut" mnemonicParsing="false" onAction="#logOut" prefHeight="60.0" prefWidth="122.0" text="SAIR">
+               <tooltip>
+                  <Tooltip fx:id="ttpBtnSair" text="Sair da sua conta">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Tooltip>
+               </tooltip>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnBarCodePane" mnemonicParsing="false" onAction="#barcodePaneShow" prefHeight="60.0" prefWidth="122.0" text="CHAVE">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Label fx:id="lblHelp" alignment="CENTER" onMouseEntered="#helpEnter" onMouseExited="#helpExit" prefHeight="60.0" prefWidth="122.0" text="AJUDA" />
+         </children>
+      </HBox>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f4f4f5" height="62.0" layoutX="10.0" layoutY="12.0" stroke="BLACK" strokeType="INSIDE" width="630.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="12.0" />
+      <Label fx:id="lblProdCod" alignment="CENTER" contentDisplay="CENTER" layoutX="19.0" layoutY="21.0" prefHeight="45.0" prefWidth="160.0" text="Código do produto" textAlignment="CENTER" AnchorPane.leftAnchor="19.0" AnchorPane.topAnchor="21.0">
+         <tooltip>
+            <Tooltip text="Codigo de 6 numeros do produto presente na etiqueta">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Tooltip>
+         </tooltip>
+      </Label>
+      <TextField fx:id="mainWindowTextField" alignment="CENTER" layoutX="188.0" layoutY="21.0" onAction="#getLot" prefHeight="45.0" prefWidth="440.0" AnchorPane.leftAnchor="188.0" AnchorPane.topAnchor="21.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Rectangle fx:id="rctMainMidle" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="755.0" layoutX="645.0" layoutY="96.0" stroke="BLACK" strokeType="INSIDE" width="46.0" />
+      <JFXProgressBar fx:id="fxLoadProgress" layoutX="-1.0" layoutY="79.0" prefHeight="14.0" prefWidth="1373.0" visible="false" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="79.0" />
+      <GridPane fx:id="gPProductInfoPanel" layoutX="5.0" layoutY="93.0" prefHeight="620.0" prefWidth="637.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="339.0" minHeight="10.0" prefHeight="327.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="85.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <ImageView fx:id="imgViewProd" fitHeight="282.0" fitWidth="361.0" pickOnBounds="true" preserveRatio="true">
+               <GridPane.margin>
+                  <Insets left="137.0" />
+               </GridPane.margin></ImageView>
+            <Label fx:id="lblProdName" prefHeight="26.0" prefWidth="628.0" GridPane.rowIndex="1" />
+            <Label fx:id="lblPrice" prefHeight="36.0" prefWidth="633.0" GridPane.rowIndex="3">
+               <opaqueInsets>
+                  <Insets left="20.0" />
+               </opaqueInsets>
+            </Label>
+            <Label fx:id="labAvalibale" prefHeight="36.0" prefWidth="627.0" GridPane.rowIndex="4">
+               <opaqueInsets>
+                  <Insets left="20.0" right="50.0" />
+               </opaqueInsets>
+            </Label>
+            <Label fx:id="lblProductLot" prefHeight="36.0" prefWidth="637.0" GridPane.rowIndex="2" />
+            <AnchorPane fx:id="aPaneBarCodeGenerator" prefHeight="244.0" prefWidth="289.0">
+               <children>
+                  <VBox fx:id="hBoxBarCodeGenerator" alignment="CENTER" layoutX="95.0" layoutY="30.0" prefHeight="200.0" prefWidth="191.0" spacing="30.0" visible="false" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                     <children>
+                        <TextField fx:id="txtFieldUserNameBarcode" alignment="CENTER" disable="true" prefHeight="25.0" prefWidth="245.0" promptText="Usuário">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </TextField>
+                        <PasswordField fx:id="pasFieldPasswordBarcode" alignment="CENTER" disable="true" promptText="Senha" />
+                        <TextField fx:id="txtFieldAccountNameBarcode" alignment="CENTER" promptText="Nome da conta (opcional)" />
+                        <VBox spacing="5.0">
+                           <children>
+                              <HBox fx:id="hBoxBarcodeButtons" alignment="CENTER" spacing="50.0">
+                                 <children>
+                                    <Button fx:id="btnGenerateandPrint" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btnBarcodeGenereteandPrint" text="Imprimir" textAlignment="CENTER" />
+                                    <Button fx:id="btnBarcodeClose" mnemonicParsing="false" onAction="#closeBarcodeGenerPane" prefHeight="25.0" prefWidth="63.0" text="Fechar" />
+                                 </children>
+                              </HBox>
+                              <Label fx:id="lblBarcodWarning" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="264.0" textAlignment="CENTER" />
+                           </children>
+                        </VBox>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+      <Label fx:id="mainWindowLable" layoutY="370.0" prefHeight="92.0" prefWidth="1390.0" visible="false" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Rectangle fx:id="rctShoppingcartRight" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="609.0" layoutX="1360.0" layoutY="124.0" stroke="BLACK" strokeType="INSIDE" width="26.0" />
+      <Rectangle fx:id="rectButom" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="137.0" layoutX="2.0" layoutY="713.0" stroke="BLACK" strokeType="INSIDE" width="1373.0" />
+      <Label fx:id="lblShoppingCart" layoutX="645.0" layoutY="93.0" prefHeight="60.0" prefWidth="724.0" text="Carrinho de compras" />
+      <AnchorPane fx:id="aPFAQ" layoutX="397.0" layoutY="105.0" prefHeight="490.0" prefWidth="582.0" visible="false">
+         <children>
+            <GridPane fx:id="gPHelp" layoutX="5.0" layoutY="4.0" prefHeight="480.0" prefWidth="574.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label fx:id="lbl1" prefHeight="7.0" prefWidth="400.0" text="1. Como trazer informação do produto na tela?">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="lbl11" text="Digitar o código presente na etiqueta no campo &quot;Código do produto&quot; e apertar Enter. " GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="lbl2" text="2. Como adicionar um produto ao carrinho de compras?" GridPane.rowIndex="2">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lbl22" text="Clickar no botão Adicionar ao carrinho." GridPane.rowIndex="3">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lbl3" text="3. Como alterar a quantidade de produtos?" GridPane.rowIndex="4">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lbl33" text="Corrigir a quantidade no campo Quantidade." GridPane.rowIndex="5">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lbl4" text="4. Como alterar a quantidade de produtos no carrinho de compras?" GridPane.rowIndex="6">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lbl44" text="Clicar no campo &quot;Embalagem&quot; e escolher a quantidade correta da lista." GridPane.rowIndex="7">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lbl5" text="5. Como excluir um produto do Carrinho de compras?" GridPane.rowIndex="8">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lbl44" text="Clicar em &quot;Embalagem&quot; e alterar a quantidade para &quot;0&quot;." GridPane.rowIndex="9">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lbl6" text="6. Como cancelar a compra ?" GridPane.rowIndex="10">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lbl66" prefHeight="21.0" prefWidth="207.0" text="Clicar no botão &quot;Excluir tudo&quot;." GridPane.rowIndex="11">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lbl7" text="7. Como finalizar seu pedido?" GridPane.rowIndex="12">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lbl77" text="Clicar no botão &quot;Finalizar&quot; ou &quot;Enviar pedido&quot;." GridPane.rowIndex="13">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lbl8" text="8. Como sair da sua conta?" GridPane.rowIndex="14">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lbl88" text="Clicar no botão &quot;Sair&quot;." GridPane.rowIndex="15">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <Label fx:id="lblLoadMess" layoutX="1.0" layoutY="90.0" prefHeight="25.0" prefWidth="1402.0" text="Carregando..." visible="false" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+   </children>
+</AnchorPane>
