@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPaneCooperflora" prefHeight="563.0" prefWidth="759.0" stylesheets="@../css/CooperfloraWindow.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ivan.polovyi.AuxiliarySystem.controllers.CooperfloraController">
+	<children>
+		<TableView fx:id="cooperfloraTableView" layoutX="37.0" layoutY="95.0" prefHeight="440.0" prefWidth="690.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="100.0">
+
+			<columnResizePolicy>
+				<TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+			</columnResizePolicy>
+
+
+			<columns>
+				<TableColumn fx:id="productCodeColumn" maxWidth="30000.0" prefWidth="180.0" text="Codigo do Fornecedor" />
+				<TableColumn fx:id="productCodeHBLOColumn" maxWidth="30000.0" prefWidth="129.0" text="Cod HBLO" />
+				<TableColumn fx:id="productStatusColumn" maxWidth="10000.0" prefWidth="100.0" text="Status" />
+				<TableColumn fx:id="productNameColumn" maxWidth="50000.0" prefWidth="250.0" text="Descrição" />
+				<TableColumn fx:id="ProductGrowerColumn" maxWidth="10000.0" prefWidth="90.0" text="Produtor" />
+				<TableColumn fx:id="productBoxQuantityColumn" maxWidth="10000.0" prefWidth="70.0" text="CX" />
+				<TableColumn fx:id="productPerBoxColumn" maxWidth="10000.0" prefWidth="70.0" text="Conteudo" />
+				<TableColumn fx:id="productPriceColumn" maxWidth="10000.0" prefWidth="70.0" text="Preço" />
+				<TableColumn fx:id="productChaveColumn" maxWidth="10000.0" minWidth="0.0" prefWidth="70.0" text="Chave" />
+				<TableColumn fx:id="productLotNumberColumn" maxWidth="10000.0" prefWidth="160.0" text="#lote" />
+				<TableColumn fx:id="productBillNumberColumn" maxWidth="10000.0" prefWidth="75.0" text="#NF" />
+			</columns>
+		</TableView>
+		<Label fx:id="drugAndDrop" alignment="CENTER" contentDisplay="CENTER" layoutX="100.0" layoutY="22.0" onDragOver="#changeCollorOnDragOver" prefHeight="54.0" prefWidth="559.0" text="Arrasta o arquivo" textFill="#e11c1c" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0">
+			<font>
+				<Font size="31.0" />
+			</font>
+		</Label>
+		<ProgressBar fx:id="progressBar" layoutX="280.0" layoutY="13.0" prefHeight="15.0" prefWidth="200.0" progress="0.0" AnchorPane.leftAnchor="280.0" AnchorPane.rightAnchor="279.0" />
+		<Button fx:id="returnButton" layoutX="367.0" layoutY="524.0" mnemonicParsing="false" onAction="#returnToMain" text="Proximo arquivo" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="320.0" AnchorPane.rightAnchor="320.0" />
+	</children>
+</AnchorPane>

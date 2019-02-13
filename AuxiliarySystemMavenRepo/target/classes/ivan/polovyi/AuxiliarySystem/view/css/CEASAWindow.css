@@ -1,0 +1,12 @@
+#anchorPaneCEASA {
+	-fx-background-color:blue;
+	-fx-background-image:url("/ivan/polovyi/AuxiliarySystem/view/pictures/CEASAView.jpg");
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: cover, auto;
+}
+
+#mainLable {
+	-fx-background-color:white;
+}
+#ceasaTableView{-fx-background-color:transparent;}

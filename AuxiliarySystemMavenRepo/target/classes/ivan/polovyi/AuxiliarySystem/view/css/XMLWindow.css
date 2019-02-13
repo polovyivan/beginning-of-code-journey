@@ -1,0 +1,16 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+#anchorPaneXML {
+	-fx-background-color:blue;
+	-fx-background-image:url("/ivan/polovyi/AuxiliarySystem/view/pictures/XMLWiev.jpg");
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: cover, auto;
+}
+
+#mainLable {
+	-fx-background-color:white;
+}
+
+
+#xmlTableView{-fx-background-color:transparent;}

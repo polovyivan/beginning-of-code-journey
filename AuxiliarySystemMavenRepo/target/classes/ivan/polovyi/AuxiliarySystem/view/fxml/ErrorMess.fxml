@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="errorAnchorPane" prefHeight="199.0" prefWidth="524.0" stylesheets="@../css/ErrorMess.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ivan.polovyi.AuxiliarySystem.controllers.ErrorController">
+	<children>
+		<Button fx:id="errorBTN" layoutX="231.0" layoutY="160.0" mnemonicParsing="false" onAction="#errorMessClose" prefHeight="25.0" prefWidth="63.0" text="Fechar" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="231.0" AnchorPane.rightAnchor="230.0" />
+		<TextArea fx:id="errorTextArea" editable="false" layoutX="20.0" layoutY="14.0" prefHeight="135.0" prefWidth="484.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+	</children>
+</AnchorPane>

@@ -1,0 +1,17 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+#anchorPaneCooperflora{
+	-fx-background-color:green;	
+	-fx-background-image:url("/ivan/polovyi/AuxiliarySystem/view/pictures/CooperfloraWiev.jpg");
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: cover, auto;
+}
+#mainLable{
+	-fx-background-color:white;
+}
+
+#cooperfloraTableView{-fx-background-color:transparent;}
+
+
+
