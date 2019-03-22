@@ -1,0 +1,152 @@
+<?xml version="1.0" ?>
+<S:Envelope
+	xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+	<S:Body>
+		<PutOrderRequest
+			xmlns="urn:fec:florecom:xml:data:draft:OrderStandardMessage:7"
+			xmlns:ns2="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:3"
+			xmlns:ns3="urn:fec:florecom:xml:data:draft:ReusableAggregateBusinessInformationEntity:6"
+			xmlns:ns4="urn:fec:florecom:xml:data:draft:SupplyStandardMessage:7">
+			<Header>
+				<UserName>hbeloservice</UserName>
+				<Password>53webservice</Password>
+				<MessageID>20190319135037</MessageID>
+				<MessageDateTime>2019-03-19T13:50:37.686-03:00</MessageDateTime>
+				<MessageSerial>1</MessageSerial>
+			</Header>
+			<Body>
+				<Order>
+					<OrderTradeLineItem>
+						<ns3:ID schemeName="ON" schemeDataURI="8733333322222"
+							schemeURI="8733333322222">VP239967</ns3:ID>
+						<ns3:DocumentType>9</ns3:DocumentType>
+						<ns3:LineDateTime>2019-03-20T12:00:00-03:00</ns3:LineDateTime>
+						<ns3:TradingTerms>
+							<ns3:MarketPlace>
+								<ns3:ID schemeID="1" schemeAgencyName="FEC">8733333322222
+								</ns3:ID>
+							</ns3:MarketPlace>
+							<ns3:MarketFormCode>002</ns3:MarketFormCode>
+							<ns3:PaymentAgentParty>
+								<ns3:PrimaryID schemeID="1" schemeAgencyName="FEC">8733333322222
+								</ns3:PrimaryID>
+							</ns3:PaymentAgentParty>
+							<ns3:Condition>
+								<ns3:TypeCode>303</ns3:TypeCode>
+								<ns3:ValueMeasure>1</ns3:ValueMeasure>
+							</ns3:Condition>
+						</ns3:TradingTerms>
+						<ns3:ReferencedDocument>
+							<ns2:IssuerAssignedID schemeName="AAG"
+								schemeDataURI="8733333322222" schemeURI="8733333322222">VP239967
+							</ns2:IssuerAssignedID>
+							<ns2:URIID>http://img20.match-online.nl/Full/eb58c4fa-5dfc-4b7a-b86d-9b4fdc47e5e0.jpg
+							</ns2:URIID>
+							<ns2:LineID>001</ns2:LineID>
+						</ns3:ReferencedDocument>
+						<ns3:ReferencedDocument>
+							<ns2:IssuerAssignedID schemeName="IRN"
+								schemeDataURI="8733333322222" schemeURI="8733333322222">87333333222220000000000BUC
+							</ns2:IssuerAssignedID>
+						</ns3:ReferencedDocument>
+						<ns3:SupplierParty>
+							<ns2:PrimaryID schemeID="1" schemeAgencyName="FEC">8733333322222
+							</ns2:PrimaryID>
+							<ns2:Name>Cooperativa Veiling Holambra</ns2:Name>
+						</ns3:SupplierParty>
+						<ns3:CustomerParty>
+							<ns2:PrimaryID schemeID="1" schemeAgencyName="FEC">830
+							</ns2:PrimaryID>
+						</ns3:CustomerParty>
+						<ns3:Product>
+							<ns3:IndustryAssignedID schemeID="1"
+								schemeAgencyName="VBN">5269</ns3:IndustryAssignedID>
+							<ns3:SupplierAssignedID>05269.019.000.00.00
+							</ns3:SupplierAssignedID>
+							<ns3:TypeCode>57</ns3:TypeCode>
+							<ns3:ProductGroupID schemeID="16"
+								schemeAgencyName="VBN" />
+							<ns3:ApplicableGoodsCharacteristics>
+								<ns3:TypeCode listID="8" listAgencyName="VBN">S01
+								</ns3:TypeCode>
+								<ns3:ValueCode listID="9" listAgencyName="VBN">019
+								</ns3:ValueCode>
+							</ns3:ApplicableGoodsCharacteristics>
+							<ns3:ApplicableGoodsCharacteristics>
+								<ns3:TypeCode listID="8" listAgencyName="VBN">OB2
+								</ns3:TypeCode>
+								<ns3:ValueCode listID="9" listAgencyName="VBN">120
+								</ns3:ValueCode>
+							</ns3:ApplicableGoodsCharacteristics>
+							<ns3:ApplicableGoodsCharacteristics>
+								<ns3:TypeCode listID="8" listAgencyName="VBN">S50
+								</ns3:TypeCode>
+								<ns3:ValueCode listID="9" listAgencyName="VBN">003
+								</ns3:ValueCode>
+							</ns3:ApplicableGoodsCharacteristics>
+							<ns3:ApplicableGoodsCharacteristics>
+								<ns3:TypeCode listID="8" listAgencyName="VBN">S98
+								</ns3:TypeCode>
+								<ns3:ValueCode listID="9" listAgencyName="VBN">A1
+								</ns3:ValueCode>
+							</ns3:ApplicableGoodsCharacteristics>
+							<ns3:ManufacturerParty>
+								<ns2:PrimaryID schemeID="1" schemeAgencyName="FEC">49411
+								</ns2:PrimaryID>
+								<ns2:Name>GERALDO BARENDSE</ns2:Name>
+							</ns3:ManufacturerParty>
+						</ns3:Product>
+						<ns3:Quantity unitCode="1">18</ns3:Quantity>
+						<ns3:Price>
+							<ns3:TypeCode>PV</ns3:TypeCode>
+							<ns3:ChargeAmount currencyCode="BRL">15.5
+							</ns3:ChargeAmount>
+							<ns3:BasisQuantity unitCode="1">1
+							</ns3:BasisQuantity>
+							<ns3:NetPriceIndicator>true</ns3:NetPriceIndicator>
+							<ns3:MinimumQuantity unitCode="4">1
+							</ns3:MinimumQuantity>
+						</ns3:Price>
+						<ns3:Packing>
+							<ns3:ID schemeName="MB">1</ns3:ID>
+							<ns3:Package>
+								<ns3:TypeCode listID="8" listAgencyName="FEC">2
+								</ns3:TypeCode>
+								<ns3:Quantity unitCode="5">1</ns3:Quantity>
+							</ns3:Package>
+							<ns3:InnerPackageQuantity unitCode="4">3
+							</ns3:InnerPackageQuantity>
+							<ns3:InnerPacking>
+								<ns3:Package>
+									<ns3:TypeCode listID="8" listAgencyName="FEC"></ns3:TypeCode>
+									<ns3:Quantity unitCode="4">3</ns3:Quantity>
+								</ns3:Package>
+								<ns3:InnerPackageQuantity unitCode="3">3
+								</ns3:InnerPackageQuantity>
+								<ns3:InnerPacking>
+									<ns3:Package>
+										<ns3:TypeCode listID="901" listAgencyName="VBN">816
+										</ns3:TypeCode>
+										<ns3:Quantity unitCode="3">9</ns3:Quantity>
+									</ns3:Package>
+									<ns3:InnerPackageQuantity unitCode="1">6
+									</ns3:InnerPackageQuantity>
+								</ns3:InnerPacking>
+							</ns3:InnerPacking>
+						</ns3:Packing>
+						<ns3:Delivery>
+							<ns3:DeliveryTerms>
+								<ns2:DeliveryTypeCode>EXW</ns2:DeliveryTypeCode>
+							</ns3:DeliveryTerms>
+							<ns3:EarliestDeliveryDateTime>2019-03-20T16:00:00-03:00
+							</ns3:EarliestDeliveryDateTime>
+							<ns3:LatestDeliveryDateTime>2019-03-20T19:00:00-03:00
+							</ns3:LatestDeliveryDateTime>
+						</ns3:Delivery>
+					</OrderTradeLineItem>
+				</Order>
+			</Body>
+		</PutOrderRequest>
+	</S:Body>
+</S:Envelope>
+

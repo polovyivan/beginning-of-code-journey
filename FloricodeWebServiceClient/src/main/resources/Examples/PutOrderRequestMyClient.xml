@@ -1,0 +1,128 @@
+<?xml version="1.0" ?>
+<S:Envelope
+	xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+	<S:Body>
+		<ns3:PutOrderRequest
+			xmlns="urn:fec:florecom:xml:data:draft:ReusableAggregateBusinessInformationEntity:6"
+			xmlns:ns2="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:3"
+			xmlns:ns3="urn:fec:florecom:xml:data:draft:OrderStandardMessage:7"
+			xmlns:ns4="urn:fec:florecom:xml:data:draft:SupplyStandardMessage:7">
+			<ns3:Header>
+				<ns3:UserName>hbeloservice</ns3:UserName>
+				<ns3:Password>53webservice</ns3:Password>
+				<ns3:MessageID>20190314082728</ns3:MessageID>
+				<ns3:MessageDateTime>2019-03-14T08:27:28.452-03:00
+				</ns3:MessageDateTime>
+				<ns3:MessageSerial>1</ns3:MessageSerial>
+			</ns3:Header>
+			<ns3:Body>
+				<ns3:Order>
+					<ns3:OrderTradeLineItem>
+						<ID schemeName="" schemeDataURI="" schemeURI="" />
+						<DocumentType></DocumentType>
+						<LineDateTime>2019-03-14T08:27:28.452-03:00</LineDateTime>
+						<TradingTerms>
+							<MarketPlace>
+								<ID schemeID="" schemeAgencyName=""></ID>
+							</MarketPlace>
+							<MarketFormCode></MarketFormCode>
+							<PaymentAgentParty>
+								<PrimaryID schemeID="" schemeAgencyName=""></PrimaryID>
+							</PaymentAgentParty>
+							<Condition>
+								<TypeCode></TypeCode>
+								<ValueMeasure>1</ValueMeasure>
+							</Condition>
+						</TradingTerms>
+						<ReferencedDocument>
+							<ns2:IssuerAssignedID schemeName=""
+								schemeDataURI="" schemeURI=""></ns2:IssuerAssignedID>
+							<ns2:URIID />
+							<ns2:LineID></ns2:LineID>
+						</ReferencedDocument>
+						<ReferencedDocument>
+							<ns2:IssuerAssignedID schemeName=""
+								schemeDataURI="" schemeURI=""></ns2:IssuerAssignedID>
+						</ReferencedDocument>
+						<SupplierParty>
+							<ns2:PrimaryID schemeID="" schemeAgencyName=""></ns2:PrimaryID>
+							<ns2:Name></ns2:Name>
+						</SupplierParty>
+						<CustomerParty>
+							<ns2:PrimaryID schemeID=""></ns2:PrimaryID>
+						</CustomerParty>
+						<Product>
+							<IndustryAssignedID schemeID=""
+								schemeAgencyName=""></IndustryAssignedID>
+							<SupplierAssignedID></SupplierAssignedID>
+							<TypeCode></TypeCode>
+							<ProductGroupID schemeAgencyName=""></ProductGroupID>
+							<ApplicableGoodsCharacteristics>
+								<TypeCode listID="" listAgencyName=""></TypeCode>
+								<ValueCode listID="" listAgencyName=""></ValueCode>
+							</ApplicableGoodsCharacteristics>
+							<ApplicableGoodsCharacteristics>
+								<TypeCode listID="" listAgencyName=""></TypeCode>
+								<ValueCode listID="" listAgencyName=""></ValueCode>
+							</ApplicableGoodsCharacteristics>
+							<ApplicableGoodsCharacteristics>
+								<TypeCode listID="" listAgencyName=""></TypeCode>
+								<ValueCode listID="" listAgencyName=""></ValueCode>
+							</ApplicableGoodsCharacteristics>
+							<ApplicableGoodsCharacteristics>
+								<TypeCode listID="" listAgencyName=""></TypeCode>
+								<ValueCode listID="" listAgencyName=""></ValueCode>
+							</ApplicableGoodsCharacteristics>
+							<ManufacturerParty>
+								<ns2:PrimaryID schemeID="" schemeAgencyName=""></ns2:PrimaryID>
+								<ns2:Name></ns2:Name>
+							</ManufacturerParty>
+						</Product>
+						<Quantity unitCode="">1</Quantity>
+						<Price>
+							<TypeCode>PC</TypeCode>
+							<ChargeAmount currencyCode="BRL">1</ChargeAmount>
+							<BasisQuantity unitCode="">1</BasisQuantity>
+							<NetPriceIndicator>true</NetPriceIndicator>
+							<MinimumQuantity unitCode="">1</MinimumQuantity>
+						</Price>
+						<Packing>
+							<ID schemeName=""></ID>
+							<Package>
+								<TypeCode listID="" listAgencyName=""></TypeCode>
+								<Quantity unitCode="">1</Quantity>
+							</Package>
+							<InnerPackageQuantity unitCode="">1
+							</InnerPackageQuantity>
+							<InnerPacking>
+								<Package>
+									<TypeCode listID="" listAgencyName=""></TypeCode>
+									<Quantity unitCode="">1</Quantity>
+								</Package>
+								<InnerPackageQuantity unitCode="">1
+								</InnerPackageQuantity>
+								<InnerPacking>
+									<Package>
+										<TypeCode listID="" listAgencyName="1"></TypeCode>
+										<Quantity unitCode="">1</Quantity>
+									</Package>
+									<InnerPackageQuantity unitCode="">1
+									</InnerPackageQuantity>
+								</InnerPacking>
+							</InnerPacking>
+						</Packing>
+						<Delivery>
+							<DeliveryTerms>
+								<ns2:DeliveryTypeCode listID=""></ns2:DeliveryTypeCode>
+							</DeliveryTerms>
+							<EarliestDeliveryDateTime>2019-03-15T08:25:46.541-03:00
+							</EarliestDeliveryDateTime>
+							<LatestDeliveryDateTime>2019-03-15T08:25:46.555-03:00
+							</LatestDeliveryDateTime>
+						</Delivery>
+					</ns3:OrderTradeLineItem>
+				</ns3:Order>
+			</ns3:Body>
+		</ns3:PutOrderRequest>
+	</S:Body>
+</S:Envelope>

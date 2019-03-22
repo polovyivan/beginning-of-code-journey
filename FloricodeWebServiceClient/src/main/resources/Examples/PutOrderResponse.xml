@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope
+	xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<soap:Body>
+		<asm:SupplyResponse
+			xmlns:clm69417="urn:un:unece:uncefact:codelist:standard:UNECE:GovernmentActionCode:D09A"
+			xmlns:clm69659="urn:un:unece:uncefact:codelist:standard:UNECE:FundingTypeCode:D07A"
+			xmlns:clm69669="urn:un:unece:uncefact:codelist:standard:UNECE:ResourceCostCategory:D07A"
+			xmlns:clm61001Invoice="urn:un:unece:uncefact:codelist:standard:UNECE:DocumentNameCodeInvoice:D09A"
+			xmlns:clm61153="urn:un:unece:uncefact:codelist:standard:UNECE:ReferenceTypeCode:D09A"
+			xmlns:clm210AccountingE307="urn:un:unece:uncefact:codelist:standard:EDIFICASEU:TaxExemptionReason:D09A"
+			xmlns:clm66313="urn:un:unece:uncefact:codelist:standard:UNECE:MeasuredAttributeCode:D09A"
+			xmlns:clm6TDED6131="urn:un:unece:uncefact:codelist:standard:UNECE:FreightChargeQuantityUnitBasisCode:D09A"
+			xmlns:clm6Recommendation20Duration="urn:un:unece:uncefact:codelist:standard:UNECE:MeasurementUnitCommonCodeDuration:4"
+			xmlns:clmFECImageCategory10="urn:fc:florecom:xml:codelist:draft:ImageCategory:1:0"
+			xmlns:clm65243="urn:un:unece:uncefact:codelist:standard:UNECE:FreightChargeTariffCode:D09A"
+			xmlns:clm63227="urn:un:unece:uncefact:codelist:standard:UNECE:LocationFunctionCode:D09A"
+			xmlns:clm5ISO42173A="urn:un:unece:uncefact:codelist:standard:5:ISO42173A:2009-09-09"
+			xmlns:clm61001Accounting="urn:un:unece:uncefact:codelist:standard:UNECE:DocumentNameCodeAccounting:D09A"
+			xmlns:clm61001="urn:un:unece:uncefact:codelist:standard:UNECE:DocumentNameCode:D07A"
+			xmlns:clm6Recommendation28="urn:un:unece:uncefact:codelist:standard:UNECE:TransportMeansTypeCode:2007"
+			xmlns:feudt="urn:fc:florecom:xml:data:draft:UnqualifiedDataType:1"
+			xmlns:feram="urn:fec:florecom:xml:data:draft:ReusableAggregateBusinessInformationEntity:6"
+			xmlns:qdt="urn:un:unece:uncefact:data:standard:QualifiedDataType:3"
+			xmlns:clmFECTradeCondition20="urn:fc:florecom:xml:codelist:draft:TradeCondition:2:0"
+			xmlns:ids64277="urn:un:unece:uncefact:identifierlist:standard:UNECE:PaymentTermsDescriptionIdentifier:D07A"
+			xmlns:clm6Recommendation20="urn:fc:florecom:xml:codelist:standard:6:Recommendation20:4"
+			xmlns:clm62475="urn:un:unece:uncefact:codelist:standard:UNECE:EventTimeReferenceCode:D07A"
+			xmlns:clmFECPlacement10="urn:fc:florecom:xml:codelist:draft:Placement:1:0"
+			xmlns:clm69657="urn:un:unece:uncefact:codelist:standard:UNECE:EarnedValueCalculationMethod:D07A"
+			xmlns:clm64405="urn:un:unece:uncefact:codelist:standard:UNECE:StatusCode:D09A"
+			xmlns:clm64435="urn:un:unece:uncefact:codelist:standard:UNECE:PaymentMeansChannelCode:D09A"
+			xmlns:clm65305="urn:un:unece:uncefact:codelist:standard:UNECE:DutyorTaxorFeeCategoryCode:D07A"
+			xmlns:clmFECStatusReason10="urn:fc:florecom:xml:codelist:draft:StatusReason:1:0"
+			xmlns:clm64465="urn:un:unece:uncefact:codelist:standard:UNECE:AdjustmentReasonDescriptionCode:D07A"
+			xmlns:clm66145="urn:un:unece:uncefact:codelist:standard:UNECE:DimensionTypeCode:D09A"
+			xmlns:clmIANAMIMEMediaType="urn:un:unece:uncefact:codelist:standard:IANA:MIMEMediaType:2009-09-01"
+			xmlns:clm64431="urn:un:unece:uncefact:codelist:standard:UNECE:PaymentGuaranteeMeansCode:D07A"
+			xmlns:clm64461="urn:un:unece:uncefact:codelist:standard:UNECE:PaymentMeansCode:D07A"
+			xmlns:clm65153="urn:un:unece:uncefact:codelist:standard:UNECE:DutyTaxFeeTypeCode:D07A"
+			xmlns:clm63055="urn:un:unece:uncefact:codelist:standard:6:3055:D09A"
+			xmlns:clm63035="urn:un:unece:uncefact:codelist:standard:UNECE:PartyRoleCode:D09A"
+			xmlns:clm210AccountingE101="urn:un:unece:uncefact:codelist:standard:EDIFICASEU:AccountingVoucherMedium:D09A"
+			xmlns:clm210AccountingE302="urn:un:unece:uncefact:codelist:standard:EDIFICASEU:AccountingEntryLineSource:D09A"
+			xmlns:clm61225Acknowledgement="urn:un:unece:uncefact:codelist:standard:UNECE:MessageFunctionCodeAcknowledgement:D07A"
+			xmlns:clm63131="urn:un:unece:uncefact:codelist:standard:UNECE:AddressType:D09A"
+			xmlns:clm64405AccountingDebitCredit="urn:un:unece:uncefact:codelist:standard:UNECE:StatusDescriptionCodeAccountingDebitCredit:D09A"
+			xmlns:clm210AccountingE601="urn:un:unece:uncefact:codelist:standard:EDIFICASEU:AccountingAmountType:D09A"
+			xmlns:clm61001BillingDocument="urn:un:unece:uncefact:codelist:standard:UNECE:DocumentNameCodeBillingDocument:D07A"
+			xmlns:clmFECTradeItem10="urn:fc:florecom:xml:codelist:draft:TradeItem:1:0"
+			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:3"
+			xmlns:clmFECStatusCondition20="urn:fc:florecom:xml:codelist:draft:StatusCondition:2:0"
+			xmlns:clm65375="urn:un:unece:uncefact:codelist:standard:UNECE:PriceTypeCode:D07A"
+			xmlns:clm6Recommendation19="urn:un:unece:uncefact:codelist:standard:UNECE:TransportModeCode:2"
+			xmlns:clm60133="urn:un:unece:uncefact:codelist:standard:6:0133:40106"
+			xmlns:clmFECPositionUsage10="urn:fc:florecom:xml:codelist:draft:PositionUsage:1:0"
+			xmlns:clm210AccountingE304="urn:un:unece:uncefact:codelist:standard:EDIFICASEU:AlternateCurrencyAmount:D09A"
+			xmlns:ids6Recommendation23="urn:un:unece:uncefact:identifierlist:standard:UNECE:FreightCostCode:4"
+			xmlns:clm69655="urn:un:unece:uncefact:codelist:standard:UNECE:CostReportingCode:D07A"
+			xmlns:clm69675="urn:un:unece:uncefact:codelist:standard:UNECE:ScheduleTaskType:D07A"
+			xmlns:clm69665="urn:un:unece:uncefact:codelist:standard:UNECE:ProjectTypeCode:D07A"
+			xmlns:clm64439="urn:un:unece:uncefact:codelist:standard:UNECE:PaymentMethodCode:D07A"
+			xmlns:clm69651="urn:un:unece:uncefact:codelist:standard:UNECE:ContractTypeCode:D07A"
+			xmlns:clm63035ChargePaying="urn:un:unece:uncefact:codelist:standard:UNECE:PartyRoleCodeChargePaying:D09A"
+			xmlns:clm69661="urn:un:unece:uncefact:codelist:standard:UNECE:HierarchicalStructureTypeCode:D07A"
+			xmlns:clm69671="urn:un:unece:uncefact:codelist:standard:UNECE:ResourcePlanMeasureType:D07A"
+			xmlns:clm66245="urn:un:unece:uncefact:codelist:standard:UNECE:TemperatureTypeCode:D09A"
+			xmlns:clmFECImageSubject10="urn:fc:florecom:xml:codelist:draft:ImageSubject:1:0"
+			xmlns:clmFECTotalType20="urn:fc:florecom:xml:codelist:draft:TotalType:2:0"
+			xmlns:clm6ContractorType="urn:un:unece:uncefact:codelist:standard:UNECE:ContractorType:D09A"
+			xmlns:clm67187="urn:un:unece:uncefact:codelist:standard:UNECE:ProcessTypeCode:D09A"
+			xmlns:clm210AccountingE501="urn:un:unece:uncefact:codelist:standard:EDIFICASEU:AccountingAccountType:D09A"
+			xmlns:clm69677="urn:un:unece:uncefact:codelist:standard:UNECE:SecurityClassificationType:D07A"
+			xmlns:clm69667="urn:un:unece:uncefact:codelist:standard:UNECE:ReportingThresholdTriggerType:D07A"
+			xmlns:clm69653="urn:un:unece:uncefact:codelist:standard:UNECE:CostManagementCode:D07A"
+			xmlns:clm67065="urn:un:unece:uncefact:codelist:standard:UNECE:PackageTypeCode:2006"
+			xmlns:clm69673="urn:un:unece:uncefact:codelist:standard:UNECE:ScheduleTaskRelationshipType:D07A"
+			xmlns:ids5ISO316612A="urn:un:unece:uncefact:identifierlist:standard:5:ISO316612A:SecondEdition2006VI-6"
+			xmlns:clm67085="urn:un:unece:uncefact:codelist:standard:UNECE:CargoTypeClassificationCode:D09A"
+			xmlns:clm210AccountingE201="urn:un:unece:uncefact:codelist:standard:EDIFICASEU:AccountingEntryProcessing:D09A"
+			xmlns:clm210AccountingE202="urn:un:unece:uncefact:codelist:standard:EDIFICASEU:AccountingEntryCategory:D09A"
+			xmlns:clm64053="urn:un:unece:uncefact:codelist:standard:UNECE:DeliveryTermsCode:D07A"
+			xmlns:clm61373="urn:un:unece:uncefact:codelist:standard:UNECE:DocumentStatusCode:D07A"
+			xmlns:feqdt="urn:fec:florecom:xml:data:draft:QualifiedDataType:7"
+			xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:8"
+			xmlns:clm62475PaymentTermsEvent="urn:un:unece:uncefact:codelist:standard:UNECE:EventTimeReferenceCodePaymentTermsEvent:D07A"
+			xmlns:clmIANACharacterSetCode="urn:un:unece:uncefact:codelist:standard:IANA:CharacterSetCode:2007-05-14"
+			xmlns:clm210AccountingE203="urn:un:unece:uncefact:codelist:standard:EDIFICASEU:AccountingEntryLineCategory:D09A"
+			xmlns:clmFECMarketForm20="urn:fc:florecom:xml:codelist:draft:MarketForm:2:0"
+			xmlns:asm="urn:fec:florecom:xml:data:draft:SupplyStandardMessage:7">
+			<asm:Body>
+				<asm:SupplyResponseDetails>
+					<asm:AgentParty>
+						<feram:PrimaryID schemeID="1"
+							schemeAgencyName="FEC">8733333322222</feram:PrimaryID>
+					</asm:AgentParty>
+					<asm:SupplyTradeLineItem>
+						<feram:ID schemeName="AAG" schemeDataURI="8733333322222"
+							schemeURI="8733333322222">VP240058</feram:ID>
+						<feram:DocumentType>9</feram:DocumentType>
+						<feram:LineDateTime>2019-03-15T06:51:07.72-03:00
+						</feram:LineDateTime>
+						<feram:TradingTerms>
+							<feram:MarketPlace>
+								<feram:ID schemeID="1" schemeAgencyName="FEC">8733333322222
+								</feram:ID>
+							</feram:MarketPlace>
+							<feram:MarketFormCode>002</feram:MarketFormCode>
+							<feram:PaymentAgentParty>
+								<feram:PrimaryID schemeID="1"
+									schemeAgencyName="FEC">8733333322222</feram:PrimaryID>
+							</feram:PaymentAgentParty>
+							<feram:TradePeriod>
+								<feram:StartDateTime>2019-03-15T10:32:20.3979514-03:00
+								</feram:StartDateTime>
+								<feram:EndDateTime>2019-06-30T23:59:59.999-03:00
+								</feram:EndDateTime>
+							</feram:TradePeriod>
+							<feram:Condition>
+								<feram:TypeCode>303</feram:TypeCode>
+								<feram:ValueMeasure>1</feram:ValueMeasure>
+							</feram:Condition>
+						</feram:TradingTerms>
+						<feram:AdditionalInformationTradeNote>
+							<ram:SubjectCode>AAI</ram:SubjectCode>
+							<ram:Content languageCode="NL">PORTA VASO</ram:Content>
+						</feram:AdditionalInformationTradeNote>
+						<feram:SupplierParty>
+							<ram:PrimaryID schemeID="1" schemeAgencyName="FEC">8733333322222
+							</ram:PrimaryID>
+							<ram:Name>Cooperativa Veiling Holambra </ram:Name>
+						</feram:SupplierParty>
+						<feram:Product>
+							<feram:IndustryAssignedID schemeID="1"
+								schemeAgencyName="VBN">3283</feram:IndustryAssignedID>
+							<feram:SupplierAssignedID>03283.221.000.00.00
+							</feram:SupplierAssignedID>
+							<feram:DescriptionText languageCode="NL">PLATYCERIUM
+								ALCICORN</feram:DescriptionText>
+							<feram:TypeCode>57</feram:TypeCode>
+							<feram:ProductGroupID schemeID="16"
+								schemeAgencyName="VBN">30124101</feram:ProductGroupID>
+							<feram:ApplicableGoodsCharacteristics>
+								<feram:TypeCode listID="8" listAgencyName="VBN">S01
+								</feram:TypeCode>
+								<feram:ValueCode listID="9" listAgencyName="VBN">021
+								</feram:ValueCode>
+							</feram:App

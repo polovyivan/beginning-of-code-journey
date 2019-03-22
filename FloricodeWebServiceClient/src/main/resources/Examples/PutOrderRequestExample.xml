@@ -1,0 +1,170 @@
+<?xml version="1.0"?>
+<SOAP-ENV:Envelope
+	xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<SOAP-ENV:Body
+		xmlns:NS1="urn:fec:florecom:xml:data:draft:ReusableAggregateBusinessInformationEntity:6">
+		<PutOrderRequest
+			xmlns="urn:fec:florecom:xml:data:draft:OrderStandardMessage:7">
+			<Header>
+				<UserName>x</UserName>
+				<Password>x</Password>
+				<MessageID>x</MessageID>
+				<MessageDateTime>x</MessageDateTime>
+				<MessageSerial>x</MessageSerial>
+			</Header>
+			<Body>
+				<Order>
+					<OrderTradeLineItem>
+						<ID
+							xmlns="urn:fec:florecom:xml:data:draft:ReusableAggregateBusinessInformationEntity:6"
+							schemeName="x" schemeDataURI="x" schemeURI="x">x</ID>
+
+						<DocumentType
+							xmlns="urn:fec:florecom:xml:data:draft:ReusableAggregateBusinessInformationEntity:6">x</DocumentType>
+						<LineDateTime
+							xmlns="urn:fec:florecom:xml:data:draft:ReusableAggregateBusinessInformationEntity:6">x</LineDateTime>
+
+						<TradingTerms
+							xmlns="urn:fec:florecom:xml:data:draft:ReusableAggregateBusinessInformationEntity:6">
+							<MarketPlace>
+								<ID schemeID="x" schemeAgencyName="x">x</ID>
+							</MarketPlace>
+							<MarketFormCode>x</MarketFormCode>
+							<PaymentAgentParty>
+								<PrimaryID schemeID="x" schemeAgencyName="x">x</PrimaryID>
+							</PaymentAgentParty>
+							<Condition>
+								<TypeCode>x</TypeCode>
+								<ValueMeasure>x</ValueMeasure>
+							</Condition>
+						</TradingTerms>
+
+						<ReferencedDocument
+							xmlns="urn:fec:florecom:xml:data:draft:ReusableAggregateBusinessInformationEntity:6">
+							<IssuerAssignedID
+								xmlns="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:3"
+								schemeName="x" schemeDataURI="x" schemeURI="x">x</IssuerAssignedID>
+							<URIID
+								xmlns="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:3">x</URIID>
+							<LineID
+								xmlns="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:3">x</LineID>
+						</ReferencedDocument>
+						<ReferencedDocument
+							xmlns="urn:fec:florecom:xml:data:draft:ReusableAggregateBusinessInformationEntity:6">
+							<IssuerAssignedID
+								xmlns="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:3"
+								schemeName="x" schemeDataURI="x" schemeURI="x">x</IssuerAssignedID>
+						</ReferencedDocument>
+						<SupplierParty
+							xmlns="urn:fec:florecom:xml:data:draft:ReusableAggregateBusinessInformationEntity:6">
+							<PrimaryID
+								xmlns="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:3"
+								schemeID="x" schemeAgencyName="x">x</PrimaryID>
+							<Name
+								xmlns="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:3">x</Name>
+						</SupplierParty>
+
+						<CustomerParty
+							xmlns="urn:fec:florecom:xml:data:draft:ReusableAggregateBusinessInformationEntity:6">
+							<PrimaryID
+								xmlns="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:3"
+								schemeID="x" schemeAgencyName="x">x</PrimaryID>
+						</CustomerParty>
+
+
+						<Product
+							xmlns="urn:fec:florecom:xml:data:draft:ReusableAggregateBusinessInformationEntity:6">
+							<IndustryAssignedID schemeID="x"
+								schemeAgencyName="x">x</IndustryAssignedID>
+							<SupplierAssignedID>x</SupplierAssignedID>
+							<TypeCode>x</TypeCode>
+							<ProductGroupID schemeAgencyName="x">x
+							</ProductGroupID>
+							<ApplicableGoodsCharacteristics>
+								<TypeCode listID="x" listAgencyName="x">x</TypeCode>
+								<ValueCode listID="x" listAgencyName="x">x</ValueCode>
+							</ApplicableGoodsCharacteristics>
+							<ApplicableGoodsCharacteristics>
+								<TypeCode listID="x" listAgencyName="x">x</TypeCode>
+								<ValueCode listID="x" listAgencyName="x">x</ValueCode>
+							</ApplicableGoodsCharacteristics>
+							<ApplicableGoodsCharacteristics>
+								<TypeCode listID="x" listAgencyName="x">x</TypeCode>
+								<ValueCode listID="x" listAgencyName="x">x</ValueCode>
+							</ApplicableGoodsCharacteristics>
+							<ApplicableGoodsCharacteristics>
+								<TypeCode listID="x" listAgencyName="x">x</TypeCode>
+								<ValueCode listID="x" listAgencyName="x">x</ValueCode>
+							</ApplicableGoodsCharacteristics>
+							<ManufacturerParty>
+								<PrimaryID
+									xmlns="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:3"
+									schemeID="x" schemeAgencyName="x">x</PrimaryID>
+								<Name
+									xmlns="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:3">x</Name>
+							</ManufacturerParty>
+						</Product>
+
+
+
+
+
+
+						<Quantity
+							xmlns="urn:fec:florecom:xml:data:draft:ReusableAggregateBusinessInformationEntity:6"
+							unitCode="x">x</Quantity>
+
+						<Price
+							xmlns="urn:fec:florecom:xml:data:draft:ReusableAggregateBusinessInformationEntity:6">
+							<TypeCode>x</TypeCode>
+							<ChargeAmount currencyCode="x">x</ChargeAmount>
+							<BasisQuantity unitCode="x">x</BasisQuantity>
+							<NetPriceIndicator>x</NetPriceIndicator>
+							<MinimumQuantity unitCode="x">x</MinimumQuantity>
+						</Price>
+
+
+						<Packing
+							xmlns="urn:fec:florecom:xml:data:draft:ReusableAggregateBusinessInformationEntity:6">
+							<ID schemeName="x">x</ID>
+							<Package>
+								<TypeCode listID="x" listAgencyName="x">x</TypeCode>
+								<Quantity unitCode="x">x</Quantity>
+							</Package>
+							<InnerPackageQuantity unitCode="x">x
+							</InnerPackageQuantity>
+							<InnerPacking>
+								<Package>
+									<TypeCode xmlns="" xsi:nil="true" />
+									<Quantity unitCode="x">x</Quantity>
+								</Package>
+								<InnerPackageQuantity unitCode="x">x
+								</InnerPackageQuantity>
+								<InnerPacking>
+									<Package>
+										<TypeCode listID="x" listAgencyName="x">x</TypeCode>
+										<Quantity unitCode="x">x</Quantity>
+									</Package>
+									<InnerPackageQuantity unitCode="x">x
+									</InnerPackageQuantity>
+								</InnerPacking>
+							</InnerPacking>
+						</Packing>
+
+						<Delivery
+							xmlns="urn:fec:florecom:xml:data:draft:ReusableAggregateBusinessInformationEntity:6">
+							<DeliveryTerms>
+								<DeliveryTypeCode
+									xmlns="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:3">x</DeliveryTypeCode>
+							</DeliveryTerms>
+							<EarliestDeliveryDateTime>x</EarliestDeliveryDateTime>
+							<LatestDeliveryDateTime>x</LatestDeliveryDateTime>
+						</Delivery>
+					</OrderTradeLineItem>
+				</Order>
+			</Body>
+		</PutOrderRequest>
+	</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

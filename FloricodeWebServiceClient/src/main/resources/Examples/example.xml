@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope
+	xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<soap:Body>
+		<soap:Fault>
+			<faultcode>soap:Client</faultcode>
+			<faultstring>Error. Check Detail-element for more info.</faultstring>
+			<faultactor>http://web11.veilingholambra.match-online.nl/Webservice/CCVMP/v0p7/Customer.asmx</faultactor>
+			<detail>
+				<fsm:ErrorList
+					xmlns:fsm="urn:fec:florecom:xml:data:draft:ReusableAggregateBusinessInformationEntity:3">
+					<fsm:Error>
+						<fsm:ErrorLevel>application</fsm:ErrorLevel>
+						<fsm:Severity>error</fsm:Severity>
+						<fsm:ErrorCode>1005</fsm:ErrorCode>
+						<fsm:ErrorLocation>/SupplyRequest/Body/SupplyRequestDetails/AgentParty/PrimaryID</fsm:ErrorLocation>
+						<fsm:DescriptionText>Element 'AgentParty' contains invalid data.</fsm:DescriptionText>
+					</fsm:Error>
+				</fsm:ErrorList>
+			</detail>
+		</soap:Fault>
+	</soap:Body>
+</soap:Envelope>
