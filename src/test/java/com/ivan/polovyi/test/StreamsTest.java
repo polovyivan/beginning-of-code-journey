@@ -1,4 +1,4 @@
-package com.lincros.ivan.polovyi.test;
+package com.ivan.polovyi.test;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

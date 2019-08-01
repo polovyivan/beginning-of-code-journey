@@ -1,4 +1,4 @@
-package com.lincros.ivan.polovyi.test;
+package com.ivan.polovyi.test;
 
 import org.apache.commons.lang3.StringUtils;
 

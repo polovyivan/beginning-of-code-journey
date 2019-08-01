@@ -1,4 +1,4 @@
-package com.lincros.ivan.polovyi.test;
+package com.ivan.polovyi.test;
 
 import com.sun.xml.internal.ws.util.StreamUtils;
 import org.apache.commons.lang3.StringUtils;

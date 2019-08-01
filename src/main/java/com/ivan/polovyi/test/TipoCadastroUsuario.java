@@ -1,4 +1,4 @@
-package com.lincros.ivan.polovyi.test;
+package com.ivan.polovyi.test;
 
 public enum TipoCadastroUsuario {
     INTERNO(1),
