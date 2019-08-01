@@ -1,4 +1,4 @@
-package guru.springframework;
+package ivan.polovyi.springframework;
 
 /**
  * Created by jt on 10/10/18.
